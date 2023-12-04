@@ -36,6 +36,18 @@ app.get('/user/:id', async(req, res) => {
     }
 });
 
+app.put('/user/:id', async(req, res) => {
+    try {
+        const user = await User.findByIdAndUpdate(id, req.body, {new: true});
+        if (!user) {
+            return res.status(404).json({message: `cannot find user with id ${id}`})
+        }
+        res.status(200).json(user);
+    } catch (error) {
+        res.status(500).json({error: error.message});
+    }
+});
+
 mongoose.connect('mongodb://127.0.0.1:27017/useraccount')
 .then(() => {
     app.listen(3000, () => {
