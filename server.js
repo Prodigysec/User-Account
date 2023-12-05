@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
     res.send('Welcome to User Account App');
 });
 
-app.post('/user', async(req, res) => {
+app.post('/user/register', async(req, res) => {
     try {
         const user = await User.create(req.body);
         res.status(201).json(user);
