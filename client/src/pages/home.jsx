@@ -24,10 +24,32 @@ function Home() {
       [e.target.name]: e.target.value
     })
   };
-  
+
   return (
     <div>
-      <h1>Home</h1>
+      <h2>Create your account</h2>
+      <form>
+        <div class="grid grid-cols-2 gap-4 py-2">
+          <input type="text" placeholder="Username" class="border border-gray-400 py-1 px-2"/>
+          <input type="text" placeholder="Email" class="border border-gray-400 py-1 px-2"/>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <input type="text" placeholder="Password" class="border border-gray-400 py-1 px-2"/>
+          <input type="text" placeholder="Firstname" class="border border-gray-400 py-1 px-2"/>
+        </div>
+        <div class="grid grid-cols-2 gap-4 py-2">
+          <input type="text" placeholder="Lastname" class="border border-gray-400 py-1 px-2"/>
+          <input type="text" placeholder="DateOfBirth" class="border border-gray-400 py-1 px-2"/>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <input type="text" placeholder="Address" class="border border-gray-400 py-1 px-2"/>
+          <input type="text" placeholder="PhoneNumber" class="border border-gray-400 py-1 px-2"/>
+        </div>
+        <div class="grid grid-cols-2 gap-4 py-2">
+          <input type="text" placeholder="Role" class="border border-gray-400 py-1 px-2"/>
+          <input type="text" placeholder="Active" class="border border-gray-400 py-1 px-2"/>
+        </div>
+      </form>
     </div>
   )
 }
