@@ -8,3 +8,5 @@ function DeleteUser() {
     </div>
   )
 }
+
+export default DeleteUser

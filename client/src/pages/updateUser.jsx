@@ -8,3 +8,5 @@ function UpdateUser() {
     </div>
   )
 }
+
+export default UpdateUser

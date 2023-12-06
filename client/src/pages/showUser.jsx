@@ -8,3 +8,5 @@ function ShowUser() {
     </div>
   )
 }
+
+export default ShowUser
