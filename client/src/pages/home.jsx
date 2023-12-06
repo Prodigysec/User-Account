@@ -49,6 +49,11 @@ function Home() {
           <input type="text" placeholder="Role" class="border border-gray-400 py-1 px-2"/>
           <input type="text" placeholder="Active" class="border border-gray-400 py-1 px-2"/>
         </div>
+        <div class="flex justify-center">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Register
+          </button>
+        </div>
       </form>
     </div>
   )
