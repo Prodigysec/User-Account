@@ -14,7 +14,7 @@ function Home() {
     address: '',
     phoneNumber: '',
     role: '',
-    active: false
+    active: ''
   });
 
   // handle form data change
@@ -25,32 +25,35 @@ function Home() {
     })
   };
 
+ 
+
+
   return (
     <div>
       <h2>Create your account</h2>
       <form>
-        <div class="grid grid-cols-2 gap-4 py-2">
-          <input type="text" placeholder="Username" class="border border-gray-400 py-1 px-2"/>
-          <input type="text" placeholder="Email" class="border border-gray-400 py-1 px-2"/>
+        <div className="grid grid-cols-2 gap-4 py-2">
+          <input type="text" placeholder="Username" className="border border-gray-400 py-1 px-2"/>
+          <input type="text" placeholder="Email" className="border border-gray-400 py-1 px-2"/>
         </div>
-        <div class="grid grid-cols-2 gap-4">
-          <input type="text" placeholder="Password" class="border border-gray-400 py-1 px-2"/>
-          <input type="text" placeholder="Firstname" class="border border-gray-400 py-1 px-2"/>
+        <div className="grid grid-cols-2 gap-4">
+          <input type="text" placeholder="Password" className="border border-gray-400 py-1 px-2"/>
+          <input type="text" placeholder="Firstname" className="border border-gray-400 py-1 px-2"/>
         </div>
-        <div class="grid grid-cols-2 gap-4 py-2">
-          <input type="text" placeholder="Lastname" class="border border-gray-400 py-1 px-2"/>
-          <input type="text" placeholder="DateOfBirth" class="border border-gray-400 py-1 px-2"/>
+        <div className="grid grid-cols-2 gap-4 py-2">
+          <input type="text" placeholder="Lastname" className="border border-gray-400 py-1 px-2"/>
+          <input type="text" placeholder="DateOfBirth" className="border border-gray-400 py-1 px-2"/>
         </div>
-        <div class="grid grid-cols-2 gap-4">
-          <input type="text" placeholder="Address" class="border border-gray-400 py-1 px-2"/>
-          <input type="text" placeholder="PhoneNumber" class="border border-gray-400 py-1 px-2"/>
+        <div className="grid grid-cols-2 gap-4">
+          <input type="text" placeholder="Address" className="border border-gray-400 py-1 px-2"/>
+          <input type="text" placeholder="PhoneNumber" className="border border-gray-400 py-1 px-2"/>
         </div>
-        <div class="grid grid-cols-2 gap-4 py-2">
-          <input type="text" placeholder="Role" class="border border-gray-400 py-1 px-2"/>
-          <input type="text" placeholder="Active" class="border border-gray-400 py-1 px-2"/>
+        <div className="grid grid-cols-2 gap-4 py-2">
+          <input type="text" placeholder="Role" className="border border-gray-400 py-1 px-2"/>
+          <input type="text" placeholder="Active" className="border border-gray-400 py-1 px-2"/>
         </div>
-        <div class="flex justify-center">
-          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <div className="flex justify-center">
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Register
           </button>
         </div>
