@@ -17,6 +17,13 @@ function Home() {
     active: false
   });
 
+  // handle form data change
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    })
+  };
   
   return (
     <div>
