@@ -6,9 +6,25 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const userRoute = require('./routes/userRoute');
+const passport = require('passport')
+const flash = require('express-flash')
+const session = require('express-session')
+
+const initializePassport = require('./passport-config')
+initializePassport(passport, email => {
+    return users.find(user => user.email === email)
+})
 
 const app = express();
 app.use(express.json());
+app.use(flash())
+app.use(session({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false
+}))
+app.use(passport.initialize())
+app.use(passport.session())
 
 // Middleware for CORS
 app.use(cors()); // Allow all origins with defatult of CORS(*)
